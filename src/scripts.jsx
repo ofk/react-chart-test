@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import RechartsPage from './RechartsPage';
+// import Page from './RechartsPage';
+import Page from './ReactVisPage';
 
 const rootElem = document.querySelector('#root');
-ReactDOM.render(<RechartsPage/>, rootElem);
+ReactDOM.render(<Page/>, rootElem);
