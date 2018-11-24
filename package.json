@@ -9,6 +9,7 @@
     "prop-types": "^15.6.2",
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-google-charts": "^3.0.10",
     "react-vis": "^1.11.5",
     "recharts": "^1.4.1"
   },
