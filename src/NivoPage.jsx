@@ -14,15 +14,15 @@ export default class NivoPage extends React.Component {
     this.state = {
       data: data1
     };
-    console.time('1');
-    console.time('2');
+    console.time('nv1');
+    console.time('nv2');
   }
   componentDidMount() {
-    console.timeEnd('1');
+    console.timeEnd('nv1');
     this.setState({ data: data2 });
   }
   componentDidUpdate() {
-    console.timeEnd('2');
+    console.timeEnd('nv2');
   }
   render() {
   	return (

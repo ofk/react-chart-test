@@ -21,15 +21,15 @@ export default class ReactVisPage extends React.Component {
     this.state = {
       data: data1
     };
-    console.time('1');
-    console.time('2');
+    console.time('rv1');
+    console.time('rv2');
   }
   componentDidMount() {
-    console.timeEnd('1');
+    console.timeEnd('rv1');
     this.setState({ data: data2 });
   }
   componentDidUpdate() {
-    console.timeEnd('2');
+    console.timeEnd('rv2');
   }
   render() {
   	return (

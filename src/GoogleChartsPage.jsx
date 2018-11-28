@@ -13,7 +13,7 @@ const data2 = genData(data);
 
 class Loading extends React.Component {
   componentWillUnmount() {
-    console.timeEnd('0');
+    console.timeEnd('gc0');
   }
   render() {
     return <div>Loading Chart</div>;
@@ -26,16 +26,16 @@ export default class GoogleChartsPage extends React.Component {
     this.state = {
       data: data1
     };
-    console.time('0');
-    console.time('1');
-    console.time('2');
+    console.time('gc0');
+    console.time('gc1');
+    console.time('gc2');
   }
   componentDidMount() {
-    console.timeEnd('1');
+    console.timeEnd('gc1');
     this.setState({ data: data2 });
   }
   componentDidUpdate() {
-    console.timeEnd('2');
+    console.timeEnd('gc2');
   }
   render() {
  	return (

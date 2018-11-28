@@ -16,7 +16,7 @@ export const data = [];
 for (let x = 0, xz = 2000; x < xz; x += 1) {
   const d = { x };
   yAxes.forEach((yAxis, y) => {
-    d[yAxis] = Math.sin(2 * Math.PI / xz * x) + Math.cos(x * y) / (yAxes.length - y + 1) / 10;
+    d[yAxis] = 1E100 * (Math.sin(2 * Math.PI / xz * x) + Math.cos(x * y) / (yAxes.length - y + 1) / 10);
   });
   data.push(d);
 }

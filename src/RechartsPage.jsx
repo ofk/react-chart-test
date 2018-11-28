@@ -17,15 +17,15 @@ export default class RechartsPage extends React.Component {
       yAxes,
       data: data.slice(0, data.length / 2),
     };
-    console.time('1');
-    console.time('2');
+    console.time('rc1');
+    console.time('rc2');
   }
   componentDidMount() {
-    console.timeEnd('1');
+    console.timeEnd('rc1');
     this.setState({ data });
   }
   componentDidUpdate() {
-    console.timeEnd('2');
+    console.timeEnd('rc2');
   }
   render() {
   	return (
